@@ -18,7 +18,10 @@
 
 ### Evidências:
 
- <img> src="https://github.com/Brunafer/modulodois/blob/main/cadastro.gif">
+ <img src="https://github.com/Brunafer/modulodois/blob/main/cadastro.gif">
+ <img src="https://github.com/Brunafer/modulodois/blob/main/login.gif">
+ <img src="https://github.com/Brunafer/modulodois/blob/main/articless.gif">
+ 
 
 <h4 align="center"> 
 	 Status 🚀 Finalizado 
