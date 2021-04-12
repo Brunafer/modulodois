@@ -31,7 +31,7 @@ class Articles {
         cy.server()
         cy.route('POST','**/api/articles').as('POSTArticles');
         cy.route('GET','**/api/articles/agilizei-title-**').as('GETArticlesTitle');
-        cy.route('GET','**/api/articles/agilizei-title-**/comments').as('GETArticlesTitleComments');
+        cy.route('GET','**/api/articles/agilizei-title-**/comments').as('getArticlesTitleComments');
 
         cy.get(el.buttonSubmit).click()
 
@@ -48,6 +48,8 @@ class Articles {
         cy.wait(`@${Routes.as.getArticlesTitleComments}`).then((getArticlesTitleComments) => {
             expect(getArticlesTitleComments.status).to.eq(200)
         })
+        cy.url().should('contain','article');
+        
 
     }
 

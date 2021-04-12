@@ -12,21 +12,18 @@ context('Artigo', () => {
        //Preparação
             cy.backgroundLogin()
             articles.acessarFormularioDeNovaPublicacao()
-        //Ação    
-            articles.preencherFormulario()
-            articles.submeterPublicacao()
-        //Verificação   
-
-            articles.verificarSeAPublicacaoFoiCriadaComSucesso()
-           
+        
         
     });
 
     it('Criar um novo artigo',() => {
-        
-        // Verificação
+        //Ação    
+        articles.preencherFormulario()
+        articles.submeterPublicacao()
+    //Verificação   
 
-        // Separar testes por etapas: AAA - Arrange Act Assert (preparação, execução, verificação)
+        articles.verificarSeAPublicacaoFoiCriadaComSucesso()
+         // Separar testes por etapas: AAA - Arrange Act Assert (preparação, execução, verificação)
 });
 
 });
